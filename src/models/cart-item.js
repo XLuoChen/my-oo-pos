@@ -4,6 +4,10 @@ class CartItem {
     this.count = count;
   }
 
+  getBarcode(){
+    return this.item.barcode;
+  }
+
   static buildCartItems(tags, allItems) {
 
     const cartItems = [];
@@ -14,7 +18,7 @@ class CartItem {
       const barcode = tagArray[0];
       const count = parseFloat(tagArray[1] || 1);
 
-      const cartItem = cartItems.find(cartItem => cartItem.item.barcode === barcode);
+      const cartItem = cartItems.find(cartItem => cartItem.getBarcode() === barcode);
 
       if (cartItem) {
         cartItem.count += count;
@@ -23,7 +27,6 @@ class CartItem {
         cartItems.push(new CartItem(item, count));
       }
     }
-
     return cartItems;
   }
 }
