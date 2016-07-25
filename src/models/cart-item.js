@@ -4,8 +4,12 @@ class CartItem {
     this.count = count;
   }
 
-  getBarcode(){
+  getBarcode() {
     return this.item.barcode;
+  }
+
+  getPrice() {
+    return this.item.price;
   }
 
   static buildCartItems(tags, allItems) {
