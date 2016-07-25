@@ -4,20 +4,20 @@ class ReceiptItem {
     this.saved = saved;
     this.subtotal = subtotal;
   }
-  
-  getName(){
+
+  getName() {
     return this.cartItem.getName();
   }
-  
-  getPrice(){
+
+  getPrice() {
     return this.cartItem.getPrice();
   }
-  
-  getUnit(){
+
+  getUnit() {
     return this.cartItem.getUnit();
   }
-  
-  getCount(){
+
+  getCount() {
     return this.cartItem.count;
   }
 

@@ -19,8 +19,8 @@ class CartItem {
   getUnit() {
     return this.item.unit;
   }
-  
-  getSubtotal(){
+
+  getSubtotal() {
     return this.getPrice() * this.count;
   }
 

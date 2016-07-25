@@ -1,5 +1,5 @@
 class Promotion {
-  constructor(type, barcodes) {
+  constructor(type, barcodes = []) {
     this.type = type;
     this.barcodes = barcodes;
   }
