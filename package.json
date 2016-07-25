@@ -1,0 +1,7 @@
+{
+  "name": "my-oo-pos",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jasmine"
+  }
+}
