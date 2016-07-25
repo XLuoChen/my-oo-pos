@@ -12,6 +12,14 @@ class CartItem {
     return this.item.price;
   }
 
+  getName() {
+    return this.item.name;
+  }
+
+  getUnit() {
+    return this.item.unit;
+  }
+
   static buildCartItems(tags, allItems) {
 
     const cartItems = [];
